@@ -1,24 +1,24 @@
 @use 'hero';
 @use 'variaveis';
 
-.info {
+.nav_info {
     margin-top: 120px;
     background-color: #504f4f;
     height: 340px;
     width: auto;
     padding: 30px;
-    
 
-    & h3 {
+    &__title {
         margin: 20px 80px;
         color: hero.$corTitulo;
     }
 
-    & p {
+    &__text {
         margin: 20px 80px;
         color: variaveis.$corTextoSecundario;
         line-height: 30px;
         font-size: 14px;
         font-weight: 300;
     }
+
 }

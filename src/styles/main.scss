@@ -1,7 +1,7 @@
 @use 'hero';
 @use 'sub_hero';
 @use 'variaveis';
-@use 'info';
+@use 'nav_info';
 @use 'menu';
 @use 'filmes';
 @use 'redes';
@@ -21,12 +21,14 @@ $corFonteSecundaria: rgb(211, 208, 208);
 body {
     background-color: $corDeFundo;
     font-family: $fontePrincipal;
+    
 }
 
 footer {    
     text-align: center;
     background: linear-gradient(180deg, rgb(126, 126, 125), rgb(114, 113, 113), rgb(80, 78, 78));
 
+    
     & p {
         margin: 0px 400px;
         text-align: center;

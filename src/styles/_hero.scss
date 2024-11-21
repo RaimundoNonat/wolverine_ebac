@@ -3,47 +3,54 @@
 $corTitulo: rgb(241, 109, 109);
 
 .hero {
+    padding: 5.6vw;
 
-    &__content {
+    &__content__item {
         display: flex;
         justify-content: space-between;
-        margin: 30px 420px;
+        margin: 0px 420px;
         border: 1px solid transparent;
         padding-inline: 80px;
 
-        & h3 {
+        &__button {
             color: $corTitulo;
             font-size: 16px;
-            font-weight: 300;
+            font-weight: 400;
             cursor: pointer;
             margin-bottom: 10px;
             border-bottom: 1px solid rgb(99, 98, 98);
             transition-duration: 0.3s;
 
             &:hover {
-                border-bottom: 1px solid rgb(253, 73, 73);
-                transform: scale(1.05);
-                
+                border-bottom: 1px solid rgb(236, 177, 177);
+            }
+
+            &--is-active {
+                border-bottom: 1px solid rgb(236, 177, 177);
             }
         }
+
     }
 
-    &__content_branding {
-        margin: 10px 300px;
-        border: 1px solid rgb(85, 83, 83);
+    &__content__branding {
+        margin: 0 300px;
         border-radius: 5px;
-        padding: 10px 40px;
-        text-align: center;
+        max-height: 500px;
+        height: 100%;
+        position: relative;
 
-        & p {
-            transform: translate(0%, -100%);
-            color: variaveis.$corTextoSecundario;
+        &__text {
+            position: absolute;
+            color: rgb(220, 220, 220);
             font-size: 14px;
             font-weight: 300;
+            padding: 10px 40px;
+            margin: 0 100px;
         }
 
         & img {
-            width: auto;
+            position: absolute;
+            margin: 0 30%;
             height: 400px;
             align-items: center;
             opacity: 0.2;
