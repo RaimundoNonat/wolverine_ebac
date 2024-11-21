@@ -1,0 +1,52 @@
+@use 'variaveis';
+
+$corTitulo: rgb(241, 109, 109);
+
+.hero {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 420px;
+        border: 1px solid transparent;
+        padding-inline: 80px;
+
+        & h3 {
+            color: $corTitulo;
+            font-size: 16px;
+            font-weight: 300;
+            cursor: pointer;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgb(99, 98, 98);
+            transition-duration: 0.3s;
+
+            &:hover {
+                border-bottom: 1px solid rgb(253, 73, 73);
+                transform: scale(1.05);
+                
+            }
+        }
+    }
+
+    &__content_branding {
+        margin: 10px 300px;
+        border: 1px solid rgb(85, 83, 83);
+        border-radius: 5px;
+        padding: 10px 40px;
+        text-align: center;
+
+        & p {
+            transform: translate(0%, -100%);
+            color: variaveis.$corTextoSecundario;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        & img {
+            width: auto;
+            height: 400px;
+            align-items: center;
+            opacity: 0.2;
+        }
+    }
+}

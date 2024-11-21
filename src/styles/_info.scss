@@ -1,0 +1,24 @@
+@use 'hero';
+@use 'variaveis';
+
+.info {
+    margin-top: 120px;
+    background-color: #504f4f;
+    height: 340px;
+    width: auto;
+    padding: 30px;
+    
+
+    & h3 {
+        margin: 20px 80px;
+        color: hero.$corTitulo;
+    }
+
+    & p {
+        margin: 20px 80px;
+        color: variaveis.$corTextoSecundario;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,56 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    background: linear-gradient(180deg, #504f4f, rgb(78, 77, 77), rgb(56, 56, 56));
+    width: 100%;
+
+    &__toggle {
+        margin: 100px auto;
+        height: 400px;
+        width: 40%;
+  
+
+        & h3 {
+            color: rgb(241, 109, 109);
+            font-size: 24px;
+        }
+
+        & h4 {
+            color: #ffffff;
+            cursor: pointer;
+            margin-top: 18px;
+            font-size: 16px;
+            transition-duration: 0.3s;
+            width: 120px;
+            border-bottom: 1px solid rgb(32, 32, 32);
+
+            &:hover {
+                color: rgb(241, 109, 109);
+            }
+        }
+
+        & p {
+            color: rgb(226, 223, 223);
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 25px;
+        }
+    }
+
+    &__toggle_sub {
+        width: 40%;
+        
+
+        & img {
+            margin: 100px auto;
+            width: auto;
+            height: 400px;
+            opacity: 0.6;
+        }
+    
+    }
+
+  
+
+}

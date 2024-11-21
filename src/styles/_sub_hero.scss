@@ -1,0 +1,26 @@
+
+.sub_hero {
+    display: flex;
+    padding: 80px 25%;
+
+    & h2 {
+        color: #ffffff;
+        font-weight: 300;
+        width: 400px;
+        font-size: 1.1em;
+        margin: auto 40px;
+        line-height: 38px;
+        
+    }
+
+    & p {
+        font-size: 0.8em;
+    
+    }
+
+    & img {
+        width: auto;
+        height: 420px;
+        border-radius: 15px;    
+    }
+}
