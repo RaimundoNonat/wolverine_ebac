@@ -1,14 +1,13 @@
-@use 'hero';
 @use 'variaveis';
 
 .nav_info {
-    background-color: #504f4f;
-    padding: 80px 300px;
+    background-color: variaveis.$corDeFundoMenu;
+    padding: 10px 300px;
 
     &__title {
         margin: 20px 80px;
         font-size: 18px;
-        color: hero.$corTitulo;
+        color: variaveis.$corTitulos;
     }
 
     &__text {
@@ -18,5 +17,4 @@
         font-size: 14px;
         font-weight: 300;
     }
-
 }

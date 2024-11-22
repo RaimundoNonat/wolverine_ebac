@@ -5,6 +5,7 @@
 @use 'menu';
 @use 'filmes';
 @use 'redes';
+@use 'footer';
 
 * {
     margin: 0;
@@ -12,33 +13,7 @@
     box-sizing: border-box;
 }
 
-$corDeFundo: #353434;
-$fontePrincipal: Inknut Antiqua, san-serif;
-$corFontePrincipal: #fff;
-$corFonteSecundaria: rgb(211, 208, 208);
-
-
 body {
-    background-color: $corDeFundo;
-    font-family: $fontePrincipal;
-    
-}
-
-footer {    
-    text-align: center;
-    background: linear-gradient(180deg, rgb(126, 126, 125), rgb(114, 113, 113), rgb(80, 78, 78));
-
-    
-    & p {
-        margin: 0px 400px;
-        text-align: center;
-        color: rgb(192, 189, 189);
-        font-size: 12px;
-    }
-
-    & .final {
-        margin-top: 20px ;
-        color: rgb(27, 27, 27);
-        font-size: 12px;
-    }
+    background-color: variaveis.$corDeFundoPadrao;
+    font-family: variaveis.$fontePrincipal;
 }

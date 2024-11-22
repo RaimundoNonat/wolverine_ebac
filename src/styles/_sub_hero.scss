@@ -1,3 +1,4 @@
+@use 'variaveis';
 
 .sub__hero {
     padding: 5.6vw;
@@ -26,12 +27,12 @@
         & h3 {
         line-height: 36px;
         font-size: 1.2em;
-        color: #fff;
+        color: variaveis.$corFonteSecundaria;
         }
     
         & p {
         font-size: 0.8em;
-        color: #ddd5d5;
+        color: variaveis.$corFonteSecundaria;
         }
     }
 }   

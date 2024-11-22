@@ -1,0 +1,17 @@
+@use 'variaveis';
+
+.footer {    
+    text-align: center;
+    background: variaveis.$corDefundoFooter;
+    font-size: 12px;
+
+    & p {
+        margin: 0px 400px;
+        color: variaveis.$corTextoSecundario;
+    }
+
+    & .final {
+        margin-top: 20px;
+        color: rgb(27, 27, 27);
+    }
+}

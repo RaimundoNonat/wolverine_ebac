@@ -1,56 +1,56 @@
+@use 'variaveis';
+
 .menu {
-    background: linear-gradient(180deg, #504f4f, rgb(80, 79, 79), rgb(56, 56, 56));
+    background: variaveis.$corDeFundoMenu;
     padding-bottom: 100px;
+    padding-top: 100px;
 
     &__toggle {
         margin: 0 auto;
         max-width: 920px;
         width: 100%;
-        color: rgb(241, 109, 109);
+        color: variaveis.$corTitulos;
         font-size: 24px;
-        
+
         & h3 {
-            color: rgb(241, 109, 109);
+            color: variaveis.$corTitulos;
             font-size: 24px;
         }
 
         &__label__item {
             list-style: none;
-    
 
             &__titulo {
-            color: #fff;
-            cursor: pointer;
-            margin-top: 18px;
-            font-size: 16px;
-            border-bottom: 1px solid rgb(58, 57, 57);
-            position: relative;
-            max-width: 920px;
-            width: 100%;
-            display: block;
-            margin-bottom: 18px;
+                color: variaveis.$corFontePrincipal;
+                cursor: pointer;
+                margin-top: 18px;
+                font-size: 16px;
+                border-bottom: 1px solid variaveis.$corDestaques;
+                position: relative;
+                max-width: 920px;
+                width: 100%;
+                display: block;
+                margin-bottom: 18px;
 
-            &::after {
-                content: '+';
-                position: absolute;
-                top: 0;
-                left: 95%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                font-size: 40px;
+                &::after {
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    left: 95%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 40px;
+                }
             }
-            }
-            
+
             &__text {
-                color: rgb(226, 223, 223);
+                color: variaveis.$corTextoSecundario;
                 font-size: 12px;
                 line-height: 25px;
                 width: 95%;
-                overflow: hidden;    
+                overflow: hidden;
                 height: 0;
-
-                
             }
 
             &--is-open {
@@ -59,25 +59,25 @@
                 }
 
                 .menu__toggle__label__item__text {
-                    height: auto;    
-                    
+                    height: auto;
+
                     & p {
                         margin-bottom: 10px;
                     }
 
                     & a {
                         text-decoration: none;
-                        color: rgb(226, 223, 223);
+                        color: variaveis.$corTextoSecundario;
 
                         &:hover {
-                            color: rgb(241, 109, 109);
+                            color: variaveis.$corTitulos;
                         }
                     }
                 }
-            
+
             }
         }
 
-       }
-       
     }
+
+}

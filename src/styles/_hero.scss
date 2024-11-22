@@ -1,7 +1,5 @@
 @use 'variaveis';
 
-$corTitulo: rgb(241, 109, 109);
-
 .hero {
     padding: 5.6vw;
 
@@ -13,12 +11,12 @@ $corTitulo: rgb(241, 109, 109);
         padding-inline: 80px;
 
         &__button {
-            color: $corTitulo;
+            color: variaveis.$corTitulos;
             font-size: 16px;
             font-weight: 400;
             cursor: pointer;
             margin-bottom: 10px;
-            border-bottom: 1px solid rgb(99, 98, 98);
+            border-bottom: 1px solid variaveis.$corDestaques;
             transition-duration: 0.3s;
 
             &:hover {
@@ -42,7 +40,7 @@ $corTitulo: rgb(241, 109, 109);
         &__text {
             text-align: center;
             position: absolute;
-            color: rgb(168, 167, 167);
+            color: variaveis.$corFonteSecundaria;
             font-size: 14px;
             font-weight: 300;
             padding: 10px 40px;

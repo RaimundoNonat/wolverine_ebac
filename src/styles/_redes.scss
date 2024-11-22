@@ -1,13 +1,15 @@
+@use 'variaveis';
+
 .redes {
     background-color: rgb(126, 126, 125);
     display: flex;
     justify-content: space-between;
     padding: 80px 25%;
-    color: rgb(59, 59, 59);
+    color: variaveis.$corDestaques;
 
     &__itens {
         & a {
-            color: rgb(236, 234, 234);
+            color: variaveis.$corFonteSecundaria;
             font-size: 12px;
             text-decoration: none;
             justify-content: space-between;
@@ -34,8 +36,6 @@
             width: 40px;
             height: 40px;
             margin: 0px 10px;
-            
-            
             border-radius: 5px;
             transition-duration: 0.3s;
             
@@ -47,7 +47,7 @@
 
     &__itens_comunidade {
         & a {
-            color: rgb(236, 234, 234);
+            color: variaveis.$corFontePrincipal;
             font-size: 12px;
             text-decoration: none;
             justify-content: space-between;
