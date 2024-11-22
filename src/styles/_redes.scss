@@ -74,3 +74,20 @@
 }
 }
 
+@media  (min-width: variaveis.$mobile) and (max-width: variaveis.$tablet) {
+    .redes {
+        display: block;
+        text-align: center;
+        
+        &__itens_apps1 {
+            margin-bottom: 20px;    
+        }
+        &__itens_apps {
+            margin-bottom: 20px; 
+        }
+        &__itens_comunidade {
+            margin-bottom: 20px; 
+        }
+    
+    }
+    }

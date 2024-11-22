@@ -55,103 +55,138 @@
         & img {
             position: absolute;
             text-align: center;
-            left: 310px;
+            left: 30%;
             height: 500px;
             padding: 2.8vw;
-            z-index: auto;
             opacity: 0.1;
         }
     }
 }
 
 @media screen and (max-width: variaveis.$mobile) {
-.hero {
-        max-width: 400px;
-        width: 100%;
-        
+    .hero {
+        width: auto;
+
         &__content__item {
             display: block;
-            
             justify-content: center;
             margin: 0px 10%;
             border: 1px solid transparent;
-            padding-inline:10px;
-    
-            &__button {    
+            padding-inline: 10px;
 
+            &__button {
                 align-items: center;
                 display: block;
                 font-size: 20px;
-                
+
                 &--is-active {
                     border-bottom: 1px solid rgb(236, 177, 177);
                 }
             }
         }
-    
-        &__content__branding {
-            margin: 0 10px;
-            border-radius: 5px;
-            height: 800px;
-            
-            &__text {
 
-                padding: 10px 10px;
+        &__content__branding {
+            margin: 0px 0px 120px 0px;
+            border-radius: 5px;
+            height: 300px;
+
+            &__text {               
+                padding: 0 10px;
                 margin: 0 15px;
                 display: none;
-    
+                
                 &--is-active {
                     display: block;
                 }
             }
-    
+
             & img {
-             display: none;
+                display: none;
             }
         }
     }
 }
 
-@media screen and (max-width: variaveis.$tablet) {
+@media (min-width: variaveis.$mobile) and (max-width: variaveis.$tablet) {
     .hero {
-        max-width: 920px;
         width: 100%;
-        
+
+
         &__content__item {
-            display: block;
-            text-align: center;
+            display: flex;
             justify-content: center;
-            margin: 0;
+            margin: 0px;
             border: 1px solid transparent;
-            padding-inline: 10px;
-    
+
             &__button {
-                align-items: center;
-                display: block;
+                margin: 15px;
                 font-size: 20px;
+
                 &--is-active {
                     border-bottom: 1px solid rgb(236, 177, 177);
                 }
             }
         }
-    
+
         &__content__branding {
             margin: 0 10px;
             border-radius: 5px;
-            height: 300px;
-            
+            height: 240px;
+
             &__text {
                 padding: 10px 10px;
                 margin: 0 15px;
                 display: none;
-    
+
                 &--is-active {
                     display: block;
                 }
             }
-    
+
             & img {
-             display: none;
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: variaveis.$tablet) and (max-width: variaveis.$desktop) {
+    .hero {
+        width: 100%;
+
+        &__content__item {
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            border: 1px solid transparent;
+
+            &__button {
+                margin: 15px;
+                font-size: 20px;
+
+                &--is-active {
+                    border-bottom: 1px solid rgb(236, 177, 177);
+                }
+            }
+        }
+
+        &__content__branding {
+            margin: 0 10px;
+            border-radius: 5px;
+            height: 100px;
+
+            &__text {
+                padding: 10px 10px;
+                margin: 0 15px;
+                display: none;
+
+                &--is-active {
+                    display: block;
+                }
+            }
+
+            & img {
+                display: none;
             }
         }
     }

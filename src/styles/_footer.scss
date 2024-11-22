@@ -18,21 +18,27 @@
 
 @media screen and (max-width: variaveis.$mobile) {
     .footer {    
-        max-width: 400px;
+        width: 100%;
         & p {
             margin: 0 20px;
         }
     }
 }
 
-@media screen and (max-width: variaveis.$tablet) {
-    .footer {    
+@media (min-width: variaveis.$mobile) and (max-width: variaveis.$tablet) {
+    .footer {
         width: 100%;
-        text-align: center;
-        max-width: 920px;
-
         & p {
-            margin: 0 60px;
+            margin: 0 20px;
+        }
+    }
+}
+
+@media (min-width: variaveis.$tablet) and (max-width: variaveis.$desktop) {
+    .footer {
+        width: 100%;
+        & p {
+            margin: 0 20px;
         }
     }
 }

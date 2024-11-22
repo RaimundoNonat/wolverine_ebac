@@ -23,6 +23,7 @@
     .nav_info {
         padding: 10px 25px;
     
+
         &__title {
             margin: 10px 10px;
             font-size: 18px;
@@ -39,13 +40,14 @@
     }
 }
 
-@media screen and (max-width: variaveis.$tablet) {
+@media (min-width: variaveis.$mobile) and (max-width: variaveis.$tablet) {
     .nav_info {
         padding: 10px 25px;
     
         &__title {
             margin: 10px 10px;
             font-size: 18px;
+            color: variaveis.$corTitulos;
         }
     
         &__text {
@@ -53,7 +55,27 @@
             color: variaveis.$corTextoSecundario;
             line-height: 30px;
             font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
 
+@media (min-width: variaveis.$tablet) and (max-width: variaveis.$desktop) {
+    .nav_info {
+        padding: 10px 25px;
+    
+        &__title {
+            margin: 10px 10px;
+            font-size: 18px;
+            color: variaveis.$corTitulos;
+        }
+    
+        &__text {
+            margin: 10px 50px;
+            color: variaveis.$corTextoSecundario;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 300;
         }
     }
 }
