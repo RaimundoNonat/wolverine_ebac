@@ -111,3 +111,48 @@
         }
     }
 }
+
+@media screen and (max-width: variaveis.$tablet) {
+    .hero {
+        max-width: 920px;
+        width: 100%;
+        
+        &__content__item {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            margin: 0;
+            border: 1px solid transparent;
+            padding-inline: 10px;
+    
+            &__button {
+                align-items: center;
+                display: block;
+                font-size: 20px;
+                &--is-active {
+                    border-bottom: 1px solid rgb(236, 177, 177);
+                }
+            }
+        }
+    
+        &__content__branding {
+            margin: 0 10px;
+            border-radius: 5px;
+            height: 300px;
+            
+            &__text {
+                padding: 10px 10px;
+                margin: 0 15px;
+                display: none;
+    
+                &--is-active {
+                    display: block;
+                }
+            }
+    
+            & img {
+             display: none;
+            }
+        }
+    }
+}

@@ -21,7 +21,6 @@
 
 @media screen and (max-width: variaveis.$mobile) {
     .nav_info {
-        background-color: variaveis.$corDeFundoMenu;
         padding: 10px 25px;
     
         &__title {
@@ -36,6 +35,25 @@
             line-height: 30px;
             font-size: 14px;
             font-weight: 300;
+        }
+    }
+}
+
+@media screen and (max-width: variaveis.$tablet) {
+    .nav_info {
+        padding: 10px 25px;
+    
+        &__title {
+            margin: 10px 10px;
+            font-size: 18px;
+        }
+    
+        &__text {
+            margin: 10px 10px;
+            color: variaveis.$corTextoSecundario;
+            line-height: 30px;
+            font-size: 14px;
+
         }
     }
 }
