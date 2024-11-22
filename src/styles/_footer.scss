@@ -15,3 +15,12 @@
         color: rgb(27, 27, 27);
     }
 }
+
+@media screen and (max-width: variaveis.$mobile) {
+    .footer {    
+        max-width: 400px;
+        & p {
+            margin: 0 20px;
+        }
+    }
+}

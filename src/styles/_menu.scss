@@ -77,7 +77,34 @@
 
             }
         }
-
     }
-
 }
+
+@media screen and (max-width: variaveis.$mobile) {
+.menu {
+    &__toggle {
+    max-width: 400px;
+    width: 100%;
+    
+        & h3 {  
+        margin-left: 10px;
+        }
+    
+        &__label__item {
+            &__titulo {
+            max-width: 400px;
+            width: 100%;
+            display: block;
+                &::after {            
+                left: 87%;
+                height: 100%;
+                }
+            }
+            &__text {
+            width: 85%;
+        }
+    }
+}
+}
+}
+    

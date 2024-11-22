@@ -60,9 +60,31 @@
         }
 
     }
+}
 
+@media screen and (max-width: variaveis.$mobile) {
+    .filmes {
+        padding: 0 10px;
+        width: auto;
+        background: variaveis.$corDeFundoFilmes;
+        
+        &__menu {
+            border: none;
+            padding: 10px;
+    
+            &__itens {
+                display: block;
 
-
-
-
+                &__card {
+                    margin-top: 40px;
+    
+                    & img {
+                        width: 198px;
+                        height: 293px;
+                    }
+                }
+            }
+        }
+    }
+    
 }

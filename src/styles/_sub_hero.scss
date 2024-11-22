@@ -7,7 +7,7 @@
 
         &__image {
         padding-top: 320px;
-        margin: 0px 350px;
+        margin: 0px 150px;
         max-width: 100px;
         width: 100%;
     
@@ -36,3 +36,27 @@
         }
     }
 }   
+
+@media screen and (max-width: variaveis.$mobile) {
+    .sub__hero {
+        display: block;
+    
+            &__image {
+            padding-top: 320px;
+            margin: 0px 10px;
+
+                & img {
+                width: auto;
+                height: 280px;
+                border-radius: 15px;  
+                }
+            }
+
+            &__text {
+            padding-top: 20px;
+            max-width: 400px;
+            width: 100%;
+            margin: 20px 0;
+        }
+    }      
+}

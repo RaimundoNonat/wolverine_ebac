@@ -1,13 +1,20 @@
+// Fontes
+$fontePrincipal: Inknut Antiqua, san-serif;
+
+// Cores
 $corTitulos: rgb(241, 109, 109);
 $corDestaques: rgb(59, 59, 59);
 $corTextoSecundario: rgb(221, 202, 202);
+$corFontePrincipal: #fff;
+$corFonteSecundaria: rgb(211, 208, 208);
 
+// Cores de Fundo
 $corDeFundoPadrao: #353434;
 $corDeFundoMenu: linear-gradient(180deg, #504f4f, rgb(80, 79, 79), rgb(56, 56, 56));
 $corDeFundoFilmes: linear-gradient(180deg, rgb(56, 56, 56), rgb(78, 77, 77), rgb(126, 126, 125));
 $corDeFundoMenu: linear-gradient(180deg, #504f4f, rgb(80, 79, 79), rgb(56, 56, 56));
 $corDefundoFooter: linear-gradient(180deg, rgb(126, 126, 125), rgb(114, 113, 113), rgb(80, 78, 78));
 
-$fontePrincipal: Inknut Antiqua, san-serif;
-$corFontePrincipal: #fff;
-$corFonteSecundaria: rgb(211, 208, 208);
+// BreakPoints
+$mobile: 767px;
+$tablet: 1023px;
