@@ -1,6 +1,6 @@
 .menu {
-    background: linear-gradient(180deg, #504f4f, rgb(92, 90, 90), rgb(56, 56, 56));
-    padding-bottom: 20px;
+    background: linear-gradient(180deg, #504f4f, rgb(80, 79, 79), rgb(56, 56, 56));
+    padding-bottom: 100px;
 
     &__toggle {
         margin: 0 auto;
@@ -16,7 +16,8 @@
 
         &__label__item {
             list-style: none;
-        
+    
+
             &__titulo {
             color: #fff;
             cursor: pointer;
@@ -46,9 +47,10 @@
                 font-size: 12px;
                 line-height: 25px;
                 width: 95%;
-
                 overflow: hidden;    
                 height: 0;
+
+                
             }
 
             &--is-open {
@@ -57,7 +59,20 @@
                 }
 
                 .menu__toggle__label__item__text {
-                    height: auto;                  
+                    height: auto;    
+                    
+                    & p {
+                        margin-bottom: 10px;
+                    }
+
+                    & a {
+                        text-decoration: none;
+                        color: rgb(226, 223, 223);
+
+                        &:hover {
+                            color: rgb(241, 109, 109);
+                        }
+                    }
                 }
             
             }

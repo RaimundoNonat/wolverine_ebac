@@ -4,34 +4,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    &__image {
-    padding-top: 320px;
-    margin: 0px 350px;
-    max-width: 100px;
-    width: 100%;
+        &__image {
+        padding-top: 320px;
+        margin: 0px 350px;
+        max-width: 100px;
+        width: 100%;
     
-    & img {
-    width: auto;
-    height: 420px;
-    border-radius: 15px;  
+        & img {
+        width: auto;
+        height: 420px;
+        border-radius: 15px;  
+            }
         }
-    }
     
-    &__text {
-    padding-top: 220px;
-    max-width: 400px;
-    width: 100%;
-    margin: 200px 0;
+        &__text {
+        padding-top: 220px;
+        max-width: 400px;
+        width: 100%;
+        margin: 200px 0;
     
-    & h3 {
-    line-height: 36px;
-    font-size: 1.2em;
-    color: #fff;
-    }
+        & h3 {
+        line-height: 36px;
+        font-size: 1.2em;
+        color: #fff;
+        }
     
-    & p {
-    font-size: 0.8em;
-    color: #ddd5d5;
-    }
+        & p {
+        font-size: 0.8em;
+        color: #ddd5d5;
+        }
     }
 }   

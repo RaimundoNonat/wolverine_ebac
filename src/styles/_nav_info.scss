@@ -2,14 +2,12 @@
 @use 'variaveis';
 
 .nav_info {
-    margin-top: 120px;
     background-color: #504f4f;
-    height: 340px;
-    width: auto;
-    padding: 30px;
+    padding: 80px 300px;
 
     &__title {
         margin: 20px 80px;
+        font-size: 18px;
         color: hero.$corTitulo;
     }
 
